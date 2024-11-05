@@ -1,0 +1,6 @@
+.data 
+str: .asciiz "Hello, World!" 
+.text main: li a0, 4 # Load the syscall code for 
+print_string la a1, str # Load address of the string into a1 ecall # Make the syscall 
+li a0, 10 # Load the syscall code for 
+exit ecall # Make the syscall
